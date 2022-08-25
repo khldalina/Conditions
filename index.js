@@ -1,5 +1,4 @@
 let result = 0;
-const sum = `Your result is ${result}`;
 const firstNumber = + prompt ('Enter your first number');
 const secondNumber = + prompt ('Enter your second number');
 if (isNaN(firstNumber) || isNaN(secondNumber)) {
@@ -10,16 +9,16 @@ if (operation!== '-' && operation!== '+' && operation!== '/' && operation!== '*'
     alert('incorrect operation')
 } else if (operation === '+') {
     result = firstNumber + secondNumber
-    alert(sum)
+    alert (`Your result is ${result}.`);
 }else if (operation === '-') {
     result = firstNumber - secondNumber
-    alert(sum)
+    alert (`Your result is ${result}.`);
 }else if (operation === '*') {
     result = firstNumber * secondNumber
-    alert(sum)
+    alert (`Your result is ${result}.`);
 }else if (operation === '/') {
     result = firstNumber / secondNumber
-    alert(sum)
+    alert (`Your result is ${result}.`);
 } else {
     alert('This operation is not exist');
 }
